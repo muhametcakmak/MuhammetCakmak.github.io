@@ -1,0 +1,65 @@
+.hero-section {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 80px;
+    background: var(--background-color);
+}
+
+.hero-content {
+    max-width: var(--container-width);
+    text-align: center;
+    padding: 2rem;
+}
+
+.hero-content h1 {
+    margin-bottom: 1rem;
+}
+
+.title {
+    font-size: 1.5rem;
+    color: var(--secondary-color);
+    margin-bottom: 1rem;
+}
+
+.subtitle {
+    color: var(--text-light);
+    margin-bottom: 2rem;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.social-links a {
+    color: var(--text-color);
+    font-size: 1.5rem;
+    transition: all var(--transition-speed);
+}
+
+.social-links a:hover {
+    color: var(--secondary-color);
+    transform: translateY(-3px);
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background: transparent;
+    border: 2px solid var(--secondary-color);
+    color: var(--secondary-color);
+    font-family: 'Fira Code', monospace;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: all var(--transition-speed);
+}
+
+.cta-button:hover {
+    background: var(--secondary-color);
+    color: var(--background-color);
+    box-shadow: var(--neon-glow);
+}
