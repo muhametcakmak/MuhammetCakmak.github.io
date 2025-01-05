@@ -24,4 +24,11 @@ document.addEventListener('DOMContentLoaded', () => {
         const level = skill.getAttribute('data-level');
         skill.style.setProperty('--width', `${level}%`);
     });
+
+    const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+    const navLinks = document.querySelector('.nav-links');
+
+    mobileMenuBtn.addEventListener('click', function () {
+        navLinks.classList.toggle('active');
+    });
 });

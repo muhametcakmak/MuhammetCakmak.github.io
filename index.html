@@ -25,6 +25,14 @@
 
     <!-- Google Fonts - Fira Code -->
     <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- C++ için ikonları küçültmek için özel bir stil ekliyoruz -->
+    <style>
+        .skill-item .fa-plus {
+            font-size: 1.5rem;
+            /* İkon boyutunu 2rem'den 1.5rem'e düşürdük */
+        }
+    </style>
 </head>
 
 <body>
@@ -119,7 +127,7 @@
                         </div>
                         <div class="skill-item">
                             <i class="fas fa-network-wired"></i>
-                            <span>Cisco Packet Tracer</span>
+                            <span>Packet Tracer</span>
                             <div class="skill-level" data-level="70"></div>
                         </div>
                         <div class="skill-item">
@@ -132,8 +140,8 @@
                         </div>
                         <div class="skill-item">
                             <i class="fa-solid fa-c"></i>
-                            <i class="fa-solid fa-plus"></i>
-                            <i class="fa-solid fa-plus"></i>
+                            <i class="fa-solid fa-plus" style="margin-left: -5px;"></i>
+                            <i class="fa-solid fa-plus" style="margin-left: -5px;"></i>
                             <span>C++</span>
                             <div class="skill-level" data-level="80"></div>
                         </div>
@@ -243,19 +251,18 @@
 
                 <div class="project-card">
                     <div class="project-image">
-                        <img src="assets/images/dedsec.png" alt="Web Güvenliği Projesi">
+                        <img src="assets/images/port_scannerpng.png" alt="Web Güvenliği Projesi">
                     </div>
                     <div class="project-content">
-                        <h3>DEDSec</h3>
-                        <p>Html, css, js kullanarak hayali olan siber güvenlik şirketi adına tasarlanmış bir web sitesi.
+                        <h3>Port Scanner</h3>
+                        <p>Bu Python programı, belirtilen bir IP adresinde port taraması yapar. Çoklu thread yapısı
+                            sayesinde hızlı ve etkili bir tarama gerçekleştirir.
                         </p>
                         <div class="project-tags">
-                            <span>HTML5</span>
-                            <span>CSS3</span>
-                            <span>JavaScript</span>
+                            <span>Python</span>
                         </div>
                         <div class="project-links">
-                            <a href="https://github.com/muhametcakmak/muhametcakmak.github.io" target="_blank"><i
+                            <a href="https://github.com/muhametcakmak/port_scanner" target="_blank"><i
                                     class="fab fa-github"></i> Kaynak Kodu</a>
                         </div>
                     </div>
@@ -263,17 +270,18 @@
 
                 <div class="project-card">
                     <div class="project-image">
-                        <img src="assets/images/felix.png" alt="Malware Analizi Projesi">
+                        <img src="assets/images/metadata_analyzer.png" alt="Malware Analizi Projesi">
                     </div>
                     <div class="project-content">
-                        <h3>Sesli Asistan (FELİX)</h3>
-                        <p>Felix adını verdiğim bu proje windows üzerinde çalışıp sesli komutları anlamlandırıp,
-                            komutlara karşılık gelen
-                            işlevleri yerine getiren otomasyon bir sesli asistandır.</p>
+                        <h3>Metadata Analyzer</h3>
+                        <p>Bu Python programı, resim dosyalarının metadata (EXIF) bilgilerini analiz eder, JSON
+                            formatında kaydeder ve istenirse metadata'yı temizler.</p>
                         <div class="project-tags">
                             <span>Python</span>
                         </div>
                         <div class="project-links">
+                            <a href="https://github.com/muhametcakmak/metada-analyzer" target="_blank"><i
+                                    class="fab fa-github"></i> Kaynak Kodu</a>
                         </div>
                     </div>
                 </div>

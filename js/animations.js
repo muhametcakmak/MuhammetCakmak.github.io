@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const createMatrixEffect = () => {
         const canvas = document.createElement('canvas');
         const ctx = canvas.getContext('2d');
-        
+
         canvas.style.position = 'fixed';
         canvas.style.top = '0';
         canvas.style.left = '0';
@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', () => {
         canvas.style.height = '100%';
         canvas.style.zIndex = '-1';
         canvas.style.opacity = '0.05';
-        
+
         document.body.appendChild(canvas);
 
         let width = canvas.width = window.innerWidth;

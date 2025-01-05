@@ -28,8 +28,11 @@
     border: 1px solid var(--secondary-color);
     border-radius: 8px;
     padding: 1.5rem;
-    text-align: center;
+    text-align: left;
     transition: all var(--transition-speed);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
 }
 
 .skill-item:hover {
@@ -40,13 +43,13 @@
 .skill-item i {
     font-size: 2rem;
     color: var(--secondary-color);
-    margin-bottom: 1rem;
+    margin-right: 1rem;
 }
 
 .skill-item span {
-    display: block;
-    margin-bottom: 1rem;
+    display: inline;
     font-size: 1.1rem;
+    margin-left: 1rem;
 }
 
 .skill-level {
@@ -85,4 +88,7 @@
     }
 }
 
-
+.skill-item .fa-plus {
+    font-size: 1.2rem;
+    margin-left: 0.5rem;
+}

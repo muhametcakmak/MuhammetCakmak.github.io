@@ -3,6 +3,7 @@
     .nav-container {
         position: relative;
         padding: 1rem;
+        width: 100%;
     }
 
     .nav-links {
@@ -22,19 +23,92 @@
         display: flex;
     }
 
+    .nav-links.active::before {
+        content: '';
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: -1;
+    }
+
     .nav-links li {
         margin: 0.5rem 0;
-        width: 100%;
         text-align: center;
     }
 
     .nav-links a {
         display: block;
         padding: 0.5rem;
+        color: #fff;
+        text-decoration: none;
+        white-space: nowrap;
+    }
+
+    .nav-links a:hover {
+        background: rgba(255, 255, 255, 0.1);
     }
 
     .mobile-menu-btn {
         display: block;
         cursor: pointer;
     }
-} 
+
+    .skills-container {
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    .skill-item {
+        width: 90%;
+        max-width: 250px;
+        margin: 0 auto 1rem;
+        padding: 1rem;
+        box-shadow: none;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .skill-item i {
+        margin-right: 1rem;
+    }
+
+    .skill-item span {
+        text-align: center;
+        flex-grow: 1;
+    }
+
+    .terminal-window {
+        margin: 0 auto;
+        max-width: 98%;
+    }
+
+    .certificates-grid {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 0.5rem;
+    }
+
+    .certificate-card {
+        width: 100%;
+        max-width: 300px;
+        margin: 0 auto;
+        padding: 0.5rem;
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+        border-radius: 6px;
+    }
+
+    .certificate-icon {
+        font-size: 1.5rem;
+    }
+
+    .certificate-content h3 {
+        font-size: 1rem;
+    }
+
+    .certificate-content p {
+        font-size: 0.8rem;
+    }
+}
